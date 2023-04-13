@@ -1,0 +1,5 @@
+<h1><%= @game.title %></h1>
+<p> <%= @game.description %> </p>
+<%= link_to "Edit", edit_game_path %> ||
+<%= link_to "Back to all games", root_path %>
+<%= button_to "Destroy this post", @game, method: :delete %>
