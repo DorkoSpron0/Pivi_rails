@@ -15,7 +15,7 @@
   </div>
 <% end %>
 
-<%= form_tag search_path, method: :get do %>
+<%= form_tag search_path, method: :get, class: "search-form" do %>
   <%= text_field_tag :title, params[:concept], placeholder:"Busca un juego" %>
   <%= submit_tag "→", class:'buttonForm' %>
 <%end%>
