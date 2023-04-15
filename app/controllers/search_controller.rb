@@ -1,10 +1,6 @@
 class SearchController < ApplicationController
   before_action :getGameByParams, only: [:index]
 
-  def show
-    redirect_to search_path
-  end
-
   def index
     if @games == []
       flash[:alert] = "Mano no existen con ese nombre"

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :games
 
   get 'search/', to: 'search#index'
-  post '/search', to: 'search#show'
+  #post '/search', to: 'search#show'
 
 
   get 'perfil', to: "users#perfil"
