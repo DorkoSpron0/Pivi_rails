@@ -11,6 +11,9 @@
   </head>
 
   <body>
+
+  <%= render "partials/nav" %>
+
   <% if notice %>
     <p class="notice"><%= notice %></p>
   <% end %>
@@ -19,29 +22,7 @@
     <p class="alert"><%= alert %></p>
   <% end %>
   <body>
-    <div id="container">
-      <nav>
-        <div id="logo">
-          Pivi
-        </div>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Info</a></li>
-          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Categorias &nbsp;<i class="fa fa-caret-down"></i></a>
-            <div class="dd">
-              <div id="up_arrow"></div>
-            <ul>
-              <li><a href="#">Online</a></li>
-              <li><a href="#">Mundo Abierto</a></li>
-              <li><a href="#">Simulacion</a></li>
-              <li><a href="#">Rol</a></li>
-            </ul>
-            </div>
-          </li>
-          <li><a href="#">IDK</a></li>
-        </ul>
-      </nav>
-    </div>
+
   </body>
     <%= yield %>
   </body>

@@ -1,0 +1,8 @@
+class UsersController < ApplicationController
+  def perfil
+    @user = User.find_by(email: current_user.email)
+    puts "///////////////////////////////////////////////////////////"
+    puts @user
+    puts "///////////////////////////////////////////////////////////"
+  end
+end
