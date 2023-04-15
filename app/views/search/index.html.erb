@@ -16,7 +16,7 @@
   </div>
 <% end %>
 
-<%= form_with url:'search', method: :get do |form| %>
+<%= form_with url:'search', method: :get, class:'search-form' do |form| %>
   <%= form.text_field :title, placeholder:"Busca un juego" %>
   <%= form.submit "->", class:'buttonForm' %>
 <%end%>
