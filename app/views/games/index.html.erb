@@ -1,9 +1,15 @@
-<h1>Games</h1>
+<h1 class="maintitle">Games</h1>
+<h5 class="paragraph">Aqui encontraras toda clase de juegos y si no lo encuentras lo agrega asi que, que espera ¡Registrate!</h5>
 
-<%= link_to "Create new game", new_game_path %>
+<%= link_to "Create new game", new_game_path, class: "newgame" %>
 
 <% @games.each do |game| %>
   <h1><%= game.title %></h1>
   <p><%= game.description %></p>
   <%= link_to "See that game", game %>
 <% end %>
+
+<form action="/" method="get">
+  <input type="text" name="q" placeholder="Busca un Juego">
+  <button type="submit">→</button>
+</form>
