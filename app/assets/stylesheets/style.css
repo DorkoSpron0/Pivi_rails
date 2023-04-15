@@ -43,6 +43,7 @@
     justify-content: space-between;
     position:absolute;
     left: 21%;
+    z-index: 9999;
   }
   #container > nav > ul > li {
     line-height:60px;
@@ -122,6 +123,14 @@
   }
 
 
+
+.linker{
+  color: #0088ff;
+  font-size: 15px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  align-content: center;
+}
+
 .maintitle{
   color: #ffff;
   margin-top: 2.5%;
@@ -184,8 +193,8 @@ input[type="text"] {
   border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 47.5%;
-  position: absolute;
+
+
 }
 
 input[type="text"] {
@@ -210,10 +219,13 @@ input[type="text"] {
 .special-class{
   color: #ffff;
   text-align: center;
-
-  padding: 12px 12px;
+  border: 2px solid black;
+  background-color: #161b22;
+  padding: 20px 20px;
   position: relative;
-
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 20px;
 }
   
 

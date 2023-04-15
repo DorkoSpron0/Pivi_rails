@@ -1,19 +1,20 @@
 <h2 class="maintitle2">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field special-class">
+<div class="special-class">
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
-
-  <div class="field special-class">
+  <br>
+  <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
-
+<br>
   <% if devise_mapping.rememberable? %>
   <div class="checkbox-wrapper-1">
-    <div class="field special-class">
+    <div class="field">
       <%= f.check_box :remember_me, id: "example-1", class:"substituted", type:"checkbox" %>
       <%= f.label :remember_me, for:"example-1" %>
     </div>
@@ -23,6 +24,12 @@
   <div>
     <%= f.submit "Log in" , class:"buttonForm2"%>
   </div>
+<br>
+  <%= render "devise/shared/links" %>
+</div>
+
+
+
 <% end %>
 
-<%= render "devise/shared/links" %>
+
