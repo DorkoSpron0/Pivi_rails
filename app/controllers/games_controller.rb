@@ -3,7 +3,7 @@ class GamesController < ApplicationController
   before_action :findGame, only: [:show, :edit, :update, :destroy]
 
   def index
-    @games = Game.all
+      @games = Game.all
   end
 
   def new
@@ -43,4 +43,8 @@ class GamesController < ApplicationController
   def findGame
     @game = Game.find(params[:id])
   end
+
+  #def findGameByTitle
+  #  @games = Game.where("title LIKE ?", "%" + "ill" + "%")
+  #end
 end

@@ -120,8 +120,8 @@
   li {
     display: inline-block;
   }
-  
-  
+
+
 .maintitle{
   color: #ffff;
   margin-top: 2.5%;
@@ -149,6 +149,7 @@
   margin-top: 5.5%;
   margin-right: 20%;
   border: 2px solid black;
+  border-radius: 10px;
 }
 
 form {
@@ -165,7 +166,7 @@ input[type="text"] {
   font-size: 16px;
 }
 
-button[type="submit"] {
+.buttonForm{
   background-color: #d5250d;
   color: white;
   padding: 8px 12px;
